@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    okex-ruby-api (0.1.0)
+    okex-ruby-api (0.2.0)
       httparty (~> 0.19)
       openssl (~> 2.2)
 
