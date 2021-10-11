@@ -23,27 +23,44 @@ Or install it yourself as:
 
 ## Usage
 
-### Futures
+### Markets
 
-Initialize a futures session:
+Initialize a markets session:
 ```ruby
-futures = OKEX::API::Futures.new
+markets = OKEX::API::Markets.new
 ```
 
 Query for all current futures specs:
 ```ruby
-futures.list
+markets.list(type: :futures)
+```
+
+Query for all current spot specs:
+```ruby
+markets.list(type: :spot)
 ```
 
 Query for all current futures prices:
 ```ruby
-futures.tickers
+markets.tickers(type: :futures)
+```
+
+Query for all current spot prices:
+```ruby
+markets.tickers(type: :spot)
 ```
 
 Fetch a single current futures price:
 ```ruby
-futures.ticker('BTC-USDT-220325')
+markets.ticker('BTC-USDT-220325', type: :futures)
 ```
+
+Fetch a single current spot price:
+```ruby
+markets.ticker('BTC-USDT', type: :spot)
+```
+
+> Note: type is optional and defaults to 'spot'.
 
 ## Development
 

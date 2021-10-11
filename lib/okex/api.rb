@@ -2,4 +2,4 @@
 require_relative "../ext/base"
 require_relative "api/version"
 require_relative "api/config"
-require_relative "api/futures"
+require_relative "api/markets"
