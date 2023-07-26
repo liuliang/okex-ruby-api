@@ -6,14 +6,14 @@ source "https://rubygems.org"
 gemspec
 
 group :test do
-  gem 'simplecov', '< 0.18'
-  gem 'httparty', '~> 0.19'
-  gem 'openssl', '~> 2.2'
+  gem 'simplecov', '~> 0.22'
+  gem 'httparty', '~> 0.21'
+  gem 'openssl', '~> 3.1'
 end
 
-gem "rake", "~> 13.0"
-gem "minitest", "~> 5.0"
-gem "rubocop", "~> 1.7"
+gem "rake"
+gem "minitest"
+gem "rubocop"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -7,7 +7,7 @@ class OKEX::API::Base
   attr_reader :config, :key, :secret
 
   include HTTParty
-  base_uri 'https://aws.okex.com/api'
+  base_uri 'https://www.okex.com/api'
 
   def initialize(args = {})
     @config = OKEX::API::Config.new(args.dig(:config))
